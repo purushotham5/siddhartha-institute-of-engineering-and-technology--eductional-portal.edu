@@ -116,23 +116,23 @@ function results() {
     let score = 0;
     let qusWrite = 0;
 
-    if (no1.checked) {
+    if (no1.checked) {        qusWrite++;
+
         score++;
-        qusWrite++;
     }
-    if (no2.checked) {
+    if (no2.checked) {        qusWrite++;
+
         score++;
-        qusWrite++;
 
     }
-    if (no3.checked) {
+    if (no3.checked) {        qusWrite++;
+
         score++;
-        qusWrite++;
 
     }
-    if (no4.checked) {
+    if (no4.checked) {        qusWrite++;
+
         score++;
-        qusWrite++;
 
     }
     if (no5.checked) {
@@ -145,19 +145,19 @@ function results() {
 
         score++;
     }
-    if (no7.checked) {
+    if (no7.checked) {        qusWrite++;
+
         score++;
-        qusWrite++;
 
     }
-    if (no8.checked) {
+    if (no8.checked) {        qusWrite++;
+
         score++;
-        qusWrite++;
 
     }
-    if (no9.checked) {
+    if (no9.checked) {        qusWrite++;
+
         score++;
-        qusWrite++;
 
     }
     if (no10.checked) {
@@ -170,9 +170,9 @@ function results() {
 
         score++;
     }
-    if (no12.checked) {
+    if (no12.checked) {        qusWrite++;
+
         score++;
-        qusWrite++;
 
     }
     if (no13.checked) {
@@ -195,9 +195,9 @@ function results() {
 
         score++;
     }
-    if (no17.checked) {
+    if (no17.checked) {        qusWrite++;
+
         score++;
-        qusWrite++;
 
     }
     if (no18.checked) {
@@ -215,16 +215,16 @@ function results() {
     }
 
     totalScore.innerHTML = "Score = " + score + "/20";
-    totalScores.innerHTML = "Score = " + qusWrite + "/20";
-    totalQus.innerHTML = "Qus Corrected = " + score;
+    totalScores.innerHTML = "Score = " + score + "/20";
+    totalQus.innerHTML = "Qus Corrected = " + qusWrite;
 
 
-    if (qusWrite == 20) {
+    if (score == 20) {
         com.innerHTML = "Wow! Congrates";
         com.style.color = "black";
         com.style.background = "green";
         com.style.boxShadow = "1px 1px 2px 2px black";
-    } else if (qusWrite >= 15) {
+    } else if (score >= 15) {
         com.innerHTML = "Wow! Nice Try Keep It Up Like This";
         com.style.color = "none";
         com.style.background = "rgb(225, 225, 225, 0.9)";
@@ -233,11 +233,11 @@ function results() {
             "Good Performance! Try to keep push your self for good marks";
         com.style.color = "none";
         com.style.background = "rgb(225, 225, 225, 0.9)";
-//     } else if (qusWrite >= 5 && score < 15) {
+//     } else if (score >= 5 && score < 15) {
 //         com.innerHTML = "Just Pass try to lean something more Good Luck";
 //         com.style.color = "none";
 //         com.style.background = "rgb(225, 225, 225, 0.9)";
-//     } else if (qusWrite < 5) {
+//     } else if (score < 5) {
         com.innerHTML = "Fail! Please concentrate";
         com.style.color = "black";
         com.style.background = "red";
@@ -380,5 +380,5 @@ function closeScore() {
 }
 
 
-window.onloadstart = results;
-window.onloadstart = closeScore;
+// window.onloadstart = results;
+// window.onloadstart = closeScore;
