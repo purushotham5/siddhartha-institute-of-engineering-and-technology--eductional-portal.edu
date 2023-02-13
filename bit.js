@@ -323,7 +323,7 @@ function viewScore() {
     }
     if (no12.checked) {
         showresult12.style.display = "block";
-    } else {
+    } else{
         showerror12.style.display = "block";
     }
     if (no13.checked) {
