@@ -344,7 +344,20 @@ select {
     text-align: justify;
   }
 }
-
+@media (max-width: 500px) {
+  .welcome-message-to-the-users h1 {
+    font-size: 30px;
+  }
+  .content-start h2 {
+    font-size: 30px;
+  }
+  .content-start p {
+    font-size: 100%;
+    width: 95%;
+    line-height: 30px;
+    text-align: justify;
+  }
+}
 .col-4 .poster {
   min-height: 85vh;
   width: 100%;
