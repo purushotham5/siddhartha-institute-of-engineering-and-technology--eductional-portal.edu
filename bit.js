@@ -111,10 +111,10 @@ let stop = document.getElementById("sub-quiz");
 stop.addEventListener("click", results);
 
 
-    let qusWrite = 0;
 
 function results() {
     let score = 0;
+    let qusWrite = 0;
 
     if (no1.checked) {
         score++;
