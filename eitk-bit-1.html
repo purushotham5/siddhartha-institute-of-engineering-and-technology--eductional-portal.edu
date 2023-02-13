@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EITK 1st Unit Quiz</title>
+    <link rel="stylesheet" href="bit.css" />
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <!-- this is for the bootstrap links  -->
+</head>
+
+<body>
+    <article id="congrates">
+        <div class="contain">
+            <div class="congrats">
+                <h1>Congrat<span class="hide">ulation</span>s !</h1>
+                <strong class="text">You have successfully completed 1st unit Quiz</strong>
+                <span2>
+                    <h1 id="marks-results"></h1>
+                </span2>
+                <div class="btn-group">
+                    <button type="button" onclick="backEitk()">Back</button>
+                    <button type="button" onclick="Nextpage()" id="next-to">Next</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section id="topp">
+        <div class="show">
+            <div class="result-box">
+                <!-- <button type="button"><i class="fa fa-close"></i></button> -->
+                <img class="marks-logo" src="logo college.png">
+
+                <span1>
+                    <h1 id="num-ans"></h1>
+                </span1>
+                <span2>
+                    <h1 id="mark-results"></h1>
+                </span2>
+                <span3 id="compliments">
+                </span3>
+                <button type="button" onclick="closeScore()" id="close-btn">Close</button>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="boost">
+        <div class="bits">
+            <div class="content" id="hold-bits">
+                <ul class="options">
+                    <li>
+                        <strong id="qs-1">1. Hinduism is not a religion but ………………… </strong>
+                        <ul class="sub-options">
+                            <li>
+                                <label class="container-1"><input type="radio" name="q1" id="correct1" required>
+                                    <span class="checkmark"></span>
+                                a)  A Way of Life      
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1"> 
+                                    <input type="radio" name="q1" id="wrong1">
+                                    <span class="checkmark"></span>
+                                b)  Offering Ablutions  
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">  
+                                    <input type="radio" name="q1" id="wrong2">
+                                    <span class="checkmark"></span>
+                                c)  Prescribed Do’s And Don’ts
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">
+                                    <input type="radio" name="q1" id="wrong3">
+                                    <span class="checkmark"></span>
+                                d)  Half-Baked Knowledge
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cw" id="over1">Correct</li>
+                    <li class="cw" id="overr1">Wrong</li>
+                    <li class="cw" id="overrr1">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-2">2. The Veda means ……………………
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"><input type="radio" name="q2" id="wrong4"> <span
+                                        class="checkmark"></span>
+                                    a) Process of Rituals
+                                </label></li>
+                            <li> <label class="container-1"><input type="radio" name="q2" id="correct2"> <span
+                                        class="checkmark"></span>
+                                    b) Knowledge, Wisdom and Vision
+                                </label></li>
+                            <li> <label class="container-1"><input type="radio" name="q2" id="wrong6"> <span
+                                        class="checkmark"></span>
+                                    c) Soul Emancipation
+                                </label></li>
+                            <li> <label class="container-1"><input type="radio" name="q2"> <span
+                                        class="checkmark"></span>
+                                    d) Spiritual Teachings
+                                </label></li>
+                        </ul>
+                    </li>
+                    <li class="cww" id="over2">Correct</li>
+                    <li class="cw" id="overr2">Wrong</li>
+                    <li class="cw" id="overrr2">Not Attempt</li>
+                </ul>
+
+                <ul class="options">
+                    <li>
+                        <strong id="qs-3">3. Who taught Vedas to the sages?
+                        </strong>
+                        <ul class="sub-options">
+                            <li>
+                                <label class="container-1"> 
+                                    <input type="radio" name="q3"id="wrong2">
+                                    <span class="checkmark"></span>a) Humans
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">
+
+
+                                    <input type="radio" name="q3"id="wrong2">
+                                    <span class="checkmark"></span>b) Demi -gods 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">
+
+
+                                    <input type="radio" name="q3"  id="correct3">
+                                    <span class="checkmark"></span>c) God (Brahma)
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">
+                                    <input type="radio" name="q3">
+                                    <span class="checkmark"></span>d) None of these
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cw" id="over3">Correct</li>
+                    <li class="cw" id="overr3">Wrong</li>
+                    <li class="cw" id="overrr3">Not Attempt</li>
+
+
+                </ul>
+
+                <ul class="options">
+                    <li>
+                        <strong id="qs-4">4. Gayathri Mantra contained in
+
+                        </strong>
+                        <ul class="sub-options">
+                            <li>
+                                <label class="container-1">
+
+                                    <input type="radio" name="q4" id="correct4">
+                                    <span class="checkmark"></span>a) Rigveda 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">
+
+
+                                    <input type="radio" name="q4">
+                                    <span class="checkmark"></span>b) Samaveda 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">
+
+                                    <input type="radio" name="q4">
+                                    <span class="checkmark"></span>c) Ramayana 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">
+
+
+                                    <input type="radio" name="q4">
+                                    <span class="checkmark"></span>d) Mahabharata
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cw" id="over4">Correct</li>
+                    <li class="cw" id="overr4">Wrong</li>
+                    <li class="cw" id="overrr4">Not Attempt</li>
+
+                </ul>
+
+                <ul class="options">
+                    <li>
+                        <strong id="qs-5">5. Vedanta is the another name of 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q5"id="correct5"> <span
+                                        class="checkmark"></span>
+                                    a) Upanishads 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q5"> <span
+                                        class="checkmark"></span>
+                                    b) Veda 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q5"> <span
+                                        class="checkmark"></span>
+                                    c) Samaveda
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q5"> <span
+                                        class="checkmark"></span>
+                                    d) Gita
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over5">Correct</li>
+                    <li class="cw" id="overr5">Wrong</li>
+                    <li class="cw" id="overrr5">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-6">6. The vedangas are ________in number
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q6" id="correct6"> <span
+                                        class="checkmark"></span>
+                                    a) 4 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q6"> <span
+                                        class="checkmark"></span>
+                                    b) 7
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q6"> <span
+                                        class="checkmark"></span>
+                                    c) 6
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q6"> <span
+                                        class="checkmark"></span>
+                                    d) 18
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over6">Correct</li>
+                    <li class="cw" id="overr6">Wrong</li>
+                    <li class="cw" id="overrr6">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-7">7. Jyothisha is___________ </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q7" id="correct7"> <span
+                                        class="checkmark"></span>
+                                    a) Astronomy, Astrology- space or time
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q7"> <span
+                                        class="checkmark"></span>
+                                    b) Sacrifice –Activity
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q7"> <span
+                                        class="checkmark"></span>
+                                    c) The sentence
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q7"> <span
+                                        class="checkmark"></span>
+                                    d) learning- sound and syllable
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over7">Correct</li>
+                    <li class="cw" id="overr7">Wrong</li>
+                    <li class="cw" id="overrr7">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-8">8.The first and greatest grammarian is _________ 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q8"> <span
+                                        class="checkmark"></span>
+                                    a) Vyasa 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q8"> <span
+                                        class="checkmark"></span>
+                                    b) Valmiki 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q8"id="correct8"> <span
+                                        class="checkmark"></span>
+                                    c) Paini 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q8" > <span
+                                        class="checkmark"></span>
+                                    d) Sankara
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over8">Correct</li>
+                    <li class="cw" id="overrr8">Not Attempt</li>
+                    <li class="cw" id="overr8">Wrong</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-9">9. Ayurveda medicine is considered 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q9" > <span
+                                        class="checkmark"></span>
+                                    a) Medicinal preparation
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q9"> <span
+                                        class="checkmark"></span>
+                                    b) Sankara
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q9"id="correct9"> <span
+                                        class="checkmark"></span>
+                                    c) Psendoscientific
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q9"> <span
+                                        class="checkmark"></span>
+                                    d) Scientific
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over9">Correct</li>
+                    <li class="cw" id="overr9">Wrong</li>
+                    <li class="cw" id="overrr9">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-10">10. Mimamsa means ____________
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct10" name="q10"> <span
+                                        class="checkmark"></span>
+                                    a) Investigate 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q10"> <span
+                                        class="checkmark"></span>
+                                    b) Existence of Gods
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q10"> <span
+                                        class="checkmark"></span>
+                                    c) Reflection
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q10"> <span
+                                        class="checkmark"></span>
+                                    d) Injunctions
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over10">Correct</li>
+                    <li class="cw" id="overr10">Wrong</li>
+                    <li class="cw" id="overrr10">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-11">11. In Hindu Philosophy Vidya refers to the knowledge of ------------------
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct11" name="q11"> <span
+                                        class="checkmark"></span>
+                                    a) Soul 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q11"> <span
+                                        class="checkmark"></span>
+                                    b) Body 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q11"> <span
+                                        class="checkmark"></span>
+                                    c) The Infinite
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q11"> <span
+                                        class="checkmark"></span>
+                                    d) Mantras
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over11">Correct</li>
+                    <li class="cw" id="overr11">Wrong</li>
+                    <li class="cw" id="overrr11">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-12">12. Hymns mean
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct12" name="q12"> <span
+                                        class="checkmark"></span>
+                                    a) Lyrics
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q12"> <span
+                                        class="checkmark"></span>
+                                    b) Devotional songs 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q12"> <span
+                                        class="checkmark"></span>
+                                    c) mantras 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q12"> <span
+                                        class="checkmark"></span>
+                                    d) Verses 
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over12">Correct</li>
+                    <li class="cw" id="overr12">Wrong</li>
+                    <li class="cw" id="overrr12">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-13">13. Which is the principle element of Rig vedic religion? 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"  name="q13"> <span
+                                        class="checkmark"></span>
+                                    a) Goddesses 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q13"> <span
+                                        class="checkmark"></span>
+                                    b) life after death
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q13"id="correct13"> <span
+                                        class="checkmark"></span>
+                                    c) Sacrifice
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q13"> <span
+                                        class="checkmark"></span>
+                                    d) Worship of time
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over13">Correct</li>
+                    <li class="cw" id="overr13">Wrong</li>
+                    <li class="cw" id="overrr13">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-14">14. According to the dharma sutra the rate of land is
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"  name="q14"> <span
+                                        class="checkmark"></span>
+                                    a) ½ 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q14"> <span
+                                        class="checkmark"></span>
+                                    b) 1/3 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q14"> <span
+                                        class="checkmark"></span>
+                                    c) 1/5
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q14"id="correct14"> <span
+                                        class="checkmark"></span>
+                                    d) 1/6
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over14">Correct</li>
+                    <li class="cw" id="overr14">Wrong</li>
+                    <li class="cw" id="overrr14">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-15">15. The Upangas are_________ in number
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"name="q15"> <span
+                                        class="checkmark"></span>
+                                    a) 4
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" id="correct15"  name="q15"> <span
+                                        class="checkmark"></span>
+                                    b) 6
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q15"> <span
+                                        class="checkmark"></span>
+                                    c) 3
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q15"> <span
+                                        class="checkmark"></span>
+                                    d) 2
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over15">Correct</li>
+                    <li class="cw" id="overr15">Wrong</li>
+                    <li class="cw" id="overrr15">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-16">16. Vedas and vedangas are composed by
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"  name="q16"> <span
+                                        class="checkmark"></span>
+                                    a) Brahma 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q16"id="correct16"> <span
+                                        class="checkmark"></span>
+                                    b) Rishis 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q16"> <span
+                                        class="checkmark"></span>
+                                    c) Priests 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q16"> <span
+                                        class="checkmark"></span>
+                                    d) Pundits
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over16">Correct</li>
+                    <li class="cw" id="overr16">Wrong</li>
+                    <li class="cw" id="overrr16">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-17">17. Dharma shastra belongs to
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"name="q17"> <span
+                                        class="checkmark"></span>
+                                    a) Vedas 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q17"> <span
+                                        class="checkmark"></span>
+                                    b) Upavedas 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q17"id="correct17"> <span
+                                        class="checkmark"></span>
+                                    c) Upangas 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q17"> <span
+                                        class="checkmark"></span>
+                                    d) Astadashvidya
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over17">Correct</li>
+                    <li class="cw" id="overr17">Wrong</li>
+                    <li class="cw" id="overrr17">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-18">18. Traditional knowledge
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct18" name="q18"> <span
+                                        class="checkmark"></span>
+                                    a)  Science and techniques used by rural people 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q18"> <span
+                                        class="checkmark"></span>
+                                    b) Knowledge
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q18"> <span
+                                        class="checkmark"></span>
+                                    c) Indigenous knowledge
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q18"> <span
+                                        class="checkmark"></span>
+                                    d)  Greater new knowledge 
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over18">Correct</li>
+                    <li class="cw" id="overr18">Wrong</li>
+                    <li class="cw" id="overrr18">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-19">19. Shastra is that which__________ 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q19"> <span
+                                        class="checkmark"></span>
+                                    a) Compiler  
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q19"> <span
+                                        class="checkmark"></span>
+                                    b) Critiques 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q19"> <span
+                                        class="checkmark"></span>
+                                    c) reflection 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q19" id="correct19"> <span
+                                        class="checkmark"></span>
+                                    d) Protects
+
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over19">Correct</li>
+                    <li class="cw" id="overr19">Wrong</li>
+                    <li class="cw" id="overrr19">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-20">20. Which of the following vedic literature contains details about the means of Vedic
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct20" name="q20"> <span
+                                        class="checkmark"></span>
+                                    a) Vedangas 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q20"> <span
+                                        class="checkmark"></span>
+                                    b) Upanishads
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q20"> <span
+                                        class="checkmark"></span>
+                                    c) Aranyakas 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q20"> <span
+                                        class="checkmark"></span>
+                                    d) Brahaman
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over20">Correct</li>
+                    <li class="cw" id="overr20">Wrong</li>
+                    <li class="cw" id="overrr20">Not Attempt</li>
+                </ul>
+
+            </div>
+            <div class="btns">
+                <button type="button" onclick="backPage()" id="back-to">Back</button>
+                <button type="submit" onclick="results()" value="back" id="sub-quiz"> SubmitQuiz
+                </button>
+                <button type="button" onclick="viewScore()" id="ViewScore">View
+                    Score</button>
+                <button type="button" onclick="nextPage()">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="bit.js"></script>
+    <script>
+        let cong = document.getElementById("congrates");
+        let boot = document.getElementById("boost");
+
+        function nextPage() {
+            if (score >= 15) {
+                cong.style.display = "block";
+                boot.style.display = "none";
+            } else {
+                cong.style.display = "none";
+                boot.style.display = "block";
+                alert("sorry your marks is too low")
+            }
+        }
+
+        let bug = document.getElementById("next-to");
+        bug.addEventListener("click", Nextpage);
+
+        function Nextpage() {
+            window.location.href = "eitk-2.html";
+        }
+
+        function backEitk() {
+            window.location.href = "eitk.html";
+        }
+
+        function backPage() {
+            window.location.href = "eitk-1.html";
+        }
+    </script>
+</body>
+
+</html>

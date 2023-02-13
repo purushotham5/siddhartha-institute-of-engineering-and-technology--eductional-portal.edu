@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EITK 3rd UnitQuiz</title>
+    <link rel="stylesheet" href="bit.css" />
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <!-- this is for the bootstrap links  -->
+</head>
+
+<body>
+    <article id="congrates">
+        <div class="contain">
+            <div class="congrats">
+                <h1>Congrat<span class="hide">ulation</span>s !</h1>
+                <strong class="text">You have successfully completed 3rd unit Quiz</strong>
+                <span2>
+                    <h1 id="marks-results"></h1>
+                </span2>
+                <div class="btn-group">
+                    <button type="button" onclick="backEitk()">Back</button>
+                    <button type="button" onclick="Nextpage()" id="next-to">Next</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section id="topp">
+        <div class="show">
+            <div class="result-box">
+                <!-- <button type="button"><i class="fa fa-close"></i></button> -->
+                <img class="marks-logo" src="logo college.png">
+
+                <span1>
+                    <h1 id="num-ans"></h1>
+                </span1>
+                <span2>
+                    <h1 id="mark-results"></h1>
+                </span2>
+                <span3 id="compliments">
+                </span3>
+                <button type="button" onclick="closeScore()" id="close-btn">Close</button>
+
+            </div>
+        </div>
+    </section>
+    <div class="container" id="boost">
+        <div class="bits">
+            <div class="content" id="hold-bits">
+                <ul class="options">
+                    <li>
+                        <strong id="qs-1">1. Yoga is a group activity of </strong>
+                        <ul class="sub-options">
+                            <li>
+                                <label class="container-1"><input type="radio" name="q1" id="correct1" required>
+                                    <span class="checkmark"></span>
+                                a) Physical, mental and spiritual    
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1"> 
+                                    <input type="radio" name="q1" id="wrong1">
+                                    <span class="checkmark"></span>
+                                b) Physical, curricular and extra curricular 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">  
+                                    <input type="radio" name="q1" id="wrong2">
+                                    <span class="checkmark"></span>
+                                c) Metaphysical 
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">
+                                    <input type="radio" name="q1" id="wrong3">
+                                    <span class="checkmark"></span>
+                                d) Mental, spiritual and moral 
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cw" id="over1">Correct</li>
+                    <li class="cw" id="overr1">Wrong</li>
+                    <li class="cw" id="overrr1">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-2">2. Yoga is 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"><input type="radio" name="q2" id="wrong4"> <span
+                                        class="checkmark"></span>
+                                    a) Making of life 
+                                </label></li>
+                            <li> <label class="container-1"><input type="radio" name="q2" id="wrong5"> <span
+                                        class="checkmark"></span>
+                                    b) Building confidence
+                                </label></li>
+                            <li> <label class="container-1"><input type="radio" name="q2" id="correct2"> <span
+                                        class="checkmark"></span>
+                                    c) A way of life 
+                                </label></li>
+                            <li> <label class="container-1"><input type="radio" name="q2"> <span
+                                        class="checkmark"></span>
+                                    d) To increase span of life
+                                </label></li>
+                        </ul>
+                    </li>
+                    <li class="cww" id="over2">Correct</li>
+                    <li class="cw" id="overr2">Wrong</li>
+                    <li class="cw" id="overrr2">Not Attempt</li>
+                </ul>
+
+                <ul class="options">
+                    <li>
+                        <strong id="qs-3">3. Yoga is
+                        </strong>
+                        <ul class="sub-options">
+                            <li>
+                                <label class="container-1"><input type="radio" name="q3"id="correct3"> <span 
+                                       class="checkmark"></span>
+                                    a) The stilling of the mind 
+                                </label></li>
+                            <li>
+                                <label class="container-1"><input type="radio" name="q3"id="wrong2"> <span 
+                                       class="checkmark"></span>
+                                    b) Moving to soul
+                                </label></li>
+                            <li>
+                                <label class="container-1"><input type="radio" name="q3" id="wrong2"> <span 
+                                       class="checkmark"></span>
+                                    c) To keep body still
+                                </label></li>
+                            <li>
+                                <label class="container-1"><input type="radio" name="q3" > <span 
+                                       class="checkmark"></span>
+                                    d) Diet restrictions
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cw" id="over3">Correct</li>
+                    <li class="cw" id="overr3">Wrong</li>
+                    <li class="cw" id="overrr3">Not Attempt</li>
+
+
+                </ul>
+
+                <ul class="options">
+                    <li>
+                        <strong id="qs-4">4. The ultimate goal of yoga is 
+                        </strong>
+                        <ul class="sub-options">
+                            <li>
+                                <label class="container-1"><input type="radio" name="q4" > <span 
+                                       class="checkmark"></span>a)  Reincarnation 
+                                </label></li>
+                            <li>
+                                <label class="container-1"><input type="radio" name="q4"> <span 
+                                       class="checkmark"></span>b) Spiritual development 
+                                </label></li>
+                            <li>
+                                <label class="container-1"><input type="radio" name="q4"id="correct4"> <span 
+                                       class="checkmark"></span>
+                                    c) Moksha  
+                                </label></li>
+                            <li>
+                                <label class="container-1"><input type="radio" name="q4"> <span 
+                                       class="checkmark"></span>
+                                    d) Rebirth
+                                </label></li>
+                        </ul>
+                    </li>
+                    <li class="cw" id="over4">Correct</li>
+                    <li class="cw" id="overr4">Wrong</li>
+                    <li class="cw" id="overrr4">Not Attempt</li>
+
+                </ul>
+
+                <ul class="options">
+                    <li>
+                        <strong id="qs-5">5. One of the yoga techniques is
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q5"> <span
+                                        class="checkmark"></span>
+                                    a) Astangamarg
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q5"> <span
+                                        class="checkmark"></span>
+                                    b) Vedic mantra chanting 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q5"> <span
+                                        class="checkmark"></span>
+                                    c) Theosophical thinking
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q5" id="correct5"> <span
+                                        class="checkmark"></span>
+                                    d) Suryanamaskar
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over5">Correct</li>
+                    <li class="cw" id="overr5">Wrong</li>
+                    <li class="cw" id="overrr5">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-6">6. A pause in the moment of breath is________ 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q6"> <span
+                                        class="checkmark"></span>
+                                    a) Suryanamaskar
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q6" id="correct6"> <span
+                                        class="checkmark"></span>
+                                    b) Pranayama 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q6"> <span
+                                        class="checkmark"></span>
+                                    c) Dhyanam
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q6"> <span
+                                        class="checkmark"></span>
+                                    d) Chanting of mantras
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over6">Correct</li>
+                    <li class="cw" id="overr6">Wrong</li>
+                    <li class="cw" id="overrr6">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-7">7. Yoga has long been known to _______________ </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q7"> <span
+                                        class="checkmark"></span>
+                                    a) Reduces mental imbalance 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q7"> <span
+                                        class="checkmark"></span>
+                                    b) Aerobic activity
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q7"> <span
+                                        class="checkmark"></span>
+                                    c) Increasing the strength of the body  
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q7" id="correct7"> <span
+                                        class="checkmark"></span>
+                                    d) Lower blood pressure and slow the heart rate 
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over7">Correct</li>
+                    <li class="cw" id="overr7">Wrong</li>
+                    <li class="cw" id="overrr7">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-8">8.  The term holistic means _______________ 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q8"> <span
+                                        class="checkmark"></span>
+                                    a) A part
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q8"id="correct8"> <span
+                                        class="checkmark"></span>
+                                    b) Whole 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q8"> <span
+                                        class="checkmark"></span>
+                                    c) A half 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q8" > <span
+                                        class="checkmark"></span>
+                                    d) One a
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over8">Correct</li>
+                    <li class="cw" id="overrr8">Not Attempt</li>
+                    <li class="cw" id="overr8">Wrong</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-9">9.  One of the complementary and alternative therapies 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q9" > <span
+                                        class="checkmark"></span>
+                                    a) Spiritual training
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q9"> <span
+                                        class="checkmark"></span>
+                                    b) Physical training 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q9"> <span
+                                        class="checkmark"></span>
+                                    c) Surgical 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q9"id="correct9"> <span
+                                        class="checkmark"></span>
+                                    d) Acupuncture
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over9">Correct</li>
+                    <li class="cw" id="overr9">Wrong</li>
+                    <li class="cw" id="overrr9">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-10">10. Holistic health is defined as 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"  name="q10"> <span
+                                        class="checkmark"></span>
+                                    a) A way of life
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q10"id="correct10"> <span
+                                        class="checkmark"></span>
+                                    b) The approach to life
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q10"> <span
+                                        class="checkmark"></span>
+                                    c) Purpose of life 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q10"> <span
+                                        class="checkmark"></span>
+                                    d) Goal of life
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cww" id="over10">Correct</li>
+                    <li class="cw" id="overr10">Wrong</li>
+                    <li class="cw" id="overrr10">Not Attempt</li>
+
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-11">11.  Ancient healing tradition (Holistic) as far back on
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"  name="q11"> <span
+                                        class="checkmark"></span>
+                                    a) 2000 BC 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q11"id="correct11"> <span
+                                        class="checkmark"></span>
+                                    b) 5000 BC 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q11"> <span
+                                        class="checkmark"></span>
+                                    c) 1500 BC 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q11"> <span
+                                        class="checkmark"></span>
+                                    d) 10000 BC
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over11">Correct</li>
+                    <li class="cw" id="overr11">Wrong</li>
+                    <li class="cw" id="overrr11">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-12">12.  Which one is not one of the four sights by Gautama Siddhartha</strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct12" name="q12"> <span
+                                        class="checkmark"></span>
+                                    a) An ascetic 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q12"> <span
+                                        class="checkmark"></span>
+                                    b) Old man
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q12"> <span
+                                        class="checkmark"></span>
+                                    c) Sick man
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q12"> <span
+                                        class="checkmark"></span>
+                                    d) Dieying man 
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over12">Correct</li>
+                    <li class="cw" id="overr12">Wrong</li>
+                    <li class="cw" id="overrr12">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-13">13.  Early Aryan religious beliefs include the except 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct13" name="q13"> <span
+                                        class="checkmark"></span>
+                                    a) The eight fold path 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q13"> <span
+                                        class="checkmark"></span>
+                                    b) Numerous Gods and Goddesses
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q13"> <span
+                                        class="checkmark"></span>
+                                    c) Offering sacrifices 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q13"> <span
+                                        class="checkmark"></span>
+                                    d) The practice of rituals
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over13">Correct</li>
+                    <li class="cw" id="overr13">Wrong</li>
+                    <li class="cw" id="overrr13">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-14">14.  What does the word ‘Buddha’ mean literally?
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"  name="q14"> <span
+                                        class="checkmark"></span>
+                                    a) Teacher 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q14"> <span
+                                        class="checkmark"></span>
+                                    b) Prince
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q14"> <span
+                                        class="checkmark"></span>
+                                    c) Saint 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" id="correct14"name="q14"> <span
+                                        class="checkmark"></span>
+                                    d) Awakened One
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over14">Correct</li>
+                    <li class="cw" id="overr14">Wrong</li>
+                    <li class="cw" id="overrr14">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-15">15.  What is ‘Dukha’ ? 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct15" name="q15"> <span
+                                        class="checkmark"></span>
+                                    a) Craving 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q15"> <span
+                                        class="checkmark"></span>
+                                    b) Liberation 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q15"> <span
+                                        class="checkmark"></span>
+                                    c) Suffering
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q15"> <span
+                                        class="checkmark"></span>
+                                    d) Buddhist teaching
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over15">Correct</li>
+                    <li class="cw" id="overr15">Wrong</li>
+                    <li class="cw" id="overrr15">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-16">16.  According to the second noble truth, what is the origin of suffering?
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q16"> <span
+                                        class="checkmark"></span>
+                                    a) Bad Karma 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q16" id="correct16"> <span
+                                        class="checkmark"></span>
+                                    b) Craving 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q16"> <span
+                                        class="checkmark"></span>
+                                    c) idolatry
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q16"> <span
+                                        class="checkmark"></span>
+                                    d) Sin
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over16">Correct</li>
+                    <li class="cw" id="overr16">Wrong</li>
+                    <li class="cw" id="overrr16">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-17">17.  What does the “anatman” mean?  
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"  name="q17"> <span
+                                        class="checkmark"></span>
+                                    a) Body  
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q17"> <span
+                                        class="checkmark"></span>
+                                    b) No-self
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q17"id="correct17"> <span
+                                        class="checkmark"></span>
+                                    c) Soul
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q17"> <span
+                                        class="checkmark"></span>
+                                    d) Cosmo
+                                </label>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over17">Correct</li>
+                    <li class="cw" id="overr17">Wrong</li>
+                    <li class="cw" id="overrr17">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-18">18.  Stress and Anxiety can put under pressure on</strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct18" name="q18"> <span
+                                        class="checkmark"></span>
+                                    a) The Cardio-Vascular system
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q18"> <span
+                                        class="checkmark"></span>
+                                    b) Kidneys
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q18"> <span
+                                        class="checkmark"></span>
+                                    c) Brain 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q18"> <span
+                                        class="checkmark"></span>
+                                    d) Eyes
+                                </label>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over18">Correct</li>
+                    <li class="cw" id="overr18">Wrong</li>
+                    <li class="cw" id="overrr18">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-19">19.  Ashtanga Yoga is described by ________________ 
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio"name="q19"> <span
+                                        class="checkmark"></span>
+                                    a) Vardhaman Mahivira 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q19"> <span
+                                        class="checkmark"></span>
+                                    b) Parsvanath 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q19"> <span
+                                        class="checkmark"></span>
+                                    c) Gautma Budda 
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q19" id="correct19" > <span
+                                        class="checkmark"></span>
+                                    d) Maharishi Pathanjali 
+
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over19">Correct</li>
+                    <li class="cw" id="overr19">Wrong</li>
+                    <li class="cw" id="overrr19">Not Attempt</li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-20">20.  Traditional knowledge is a record of -__________________
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q20"> <span
+                                        class="checkmark"></span>
+                                    a) Human Achievement
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q20"> <span
+                                        class="checkmark"></span>
+                                    b) Religious Achievements
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q20"id="correct20" > <span
+                                        class="checkmark"></span>
+                                    c) Scientific Achievement
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q20"> <span
+                                        class="checkmark"></span>
+                                    d) Political Acheievements
+                                </label></li>
+
+                        </ul>
+                    </li>
+                    <li class="cw" id="over20">Correct</li>
+                    <li class="cw" id="overr20">Wrong</li>
+                    <li class="cw" id="overrr20">Not Attempt</li>
+                </ul>
+
+            </div>
+            <div class="btns">
+                <button type="button" onclick="backPage()" id="back-to">Back</button>
+                <button type="submit" onclick="results()" value="back" id="sub-quiz"> SubmitQuiz
+                </button>
+                <button type="button" onclick="viewScore()" id="ViewScore">View
+                    Score</button>
+                <button type="button" onclick="nextPage()">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="bit.js"></script>
+    <script>
+        let cong = document.getElementById("congrates");
+        let boot = document.getElementById("boost");
+
+        function nextPage() {
+            if (score >= 15) {
+                cong.style.display = "block";
+                boot.style.display = "none";
+            } else {
+                cong.style.display = "none";
+                boot.style.display = "block";
+                alert("sorry your marks is too low")
+            }
+        }
+
+        let bug = document.getElementById("next-to");
+        bug.addEventListener("click", Nextpage);
+
+        function Nextpage() {
+            window.location.href = "eitk-4.html";
+        }
+
+        function backEitk() {
+            window.location.href = "eitk.html";
+        }
+
+        function backPage() {
+            window.location.href = "eitk-3.html";
+        }
+    </script>
+</body>
+
+</html>
