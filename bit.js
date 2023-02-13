@@ -216,7 +216,7 @@ function results() {
 
     totalScore.innerHTML = "Score = " + score + "/20";
     totalScores.innerHTML = "Score = " + qusWrite + "/20";
-    totalQus.innerHTML = "Qus Corrected = " + qusWrite;
+    totalQus.innerHTML = "Qus Corrected = " + score;
 
 
     if (qusWrite == 20) {
