@@ -111,10 +111,10 @@ let stop = document.getElementById("sub-quiz");
 stop.addEventListener("click", results);
 
 
+    let qusWrite = 0;
 
 function results() {
     let score = 0;
-    let qusWrite = 0;
 
     if (no1.checked) {
         score++;
@@ -214,7 +214,7 @@ function results() {
         score++;
     }
 
-    totalScore.innerHTML = "Score = " + qusWrite + "/20";
+    totalScore.innerHTML = "Score = " + score + "/20";
     totalScores.innerHTML = "Score = " + qusWrite + "/20";
     totalQus.innerHTML = "Qus Corrected = " + qusWrite;
 
@@ -224,20 +224,20 @@ function results() {
         com.style.color = "black";
         com.style.background = "green";
         com.style.boxShadow = "1px 1px 2px 2px black";
-    } else if (qusWrite >= 35) {
+    } else if (qusWrite >= 15) {
         com.innerHTML = "Wow! Nice Try Keep It Up Like This";
         com.style.color = "none";
         com.style.background = "rgb(225, 225, 225, 0.9)";
-    } else if (score >= 15 && score < 35) {
+    } else if (score >= 5 && score < 15) {
         com.innerHTML =
             "Good Performance! Try to keep push your self for good marks";
         com.style.color = "none";
         com.style.background = "rgb(225, 225, 225, 0.9)";
-    } else if (qusWrite >= 5 && score < 15) {
-        com.innerHTML = "Just Pass try to lean something more Good Luck";
-        com.style.color = "none";
-        com.style.background = "rgb(225, 225, 225, 0.9)";
-    } else if (qusWrite < 5) {
+//     } else if (qusWrite >= 5 && score < 15) {
+//         com.innerHTML = "Just Pass try to lean something more Good Luck";
+//         com.style.color = "none";
+//         com.style.background = "rgb(225, 225, 225, 0.9)";
+//     } else if (qusWrite < 5) {
         com.innerHTML = "Fail! Please concentrate";
         com.style.color = "black";
         com.style.background = "red";
