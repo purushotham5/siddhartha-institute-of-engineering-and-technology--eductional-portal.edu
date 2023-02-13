@@ -12,7 +12,7 @@ body {
   /* background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4="); */
 
   /* background-color: white; */
-  background-color: #2196f3;
+  background-color: white;
   position: relative;
 }
 .bits {
@@ -246,8 +246,12 @@ section {
 @media (max-width: 768px) {
   .result-box {
     box-shadow: 0px 0px 0px 0px white;
-
     min-width: 80%;
+  }
+}@media (max-width: 506px) {
+  .result-box {
+    box-shadow: 0px 0px 0px 0px white;
+    min-width: 70%;
   }
 }
 span1 {
@@ -340,8 +344,8 @@ span2 {
   animation: pop 0.5s infinite;
   padding: 10px 20px;
   background-color: green;border-radius: 20px;
-  width: fit-content;
-  display: none;
+  width: fit-content;color: white;
+  display: none;box-shadow: 1px 2px 5px 2px black;
 }
 #overr1,
 #overr2,
@@ -372,8 +376,8 @@ span2 {
   animation: pop 0.5s infinite;
   padding: 10px 20px;border-radius: 20px;
   background-color: red;
-  width: fit-content;
-  display: none;
+  width: fit-content;color:white;
+  display: none;box-shadow: 1px 2px 5px 2px black;
 }
 #overrr1,
 #overrr2,
