@@ -111,28 +111,28 @@ let stop = document.getElementById("sub-quiz");
 stop.addEventListener("click", results);
 
 
+let score = 0;
 
 function results() {
-    let score = 0;
     let qusWrite = 0;
 
-    if (no1.checked) {        qusWrite++;
-
+    if (no1.checked) {
         score++;
+        qusWrite++;
     }
-    if (no2.checked) {        qusWrite++;
-
+    if (no2.checked) {
         score++;
-
-    }
-    if (no3.checked) {        qusWrite++;
-
-        score++;
+        qusWrite++;
 
     }
-    if (no4.checked) {        qusWrite++;
-
+    if (no3.checked) {
         score++;
+        qusWrite++;
+
+    }
+    if (no4.checked) {
+        score++;
+        qusWrite++;
 
     }
     if (no5.checked) {
@@ -145,19 +145,19 @@ function results() {
 
         score++;
     }
-    if (no7.checked) {        qusWrite++;
-
+    if (no7.checked) {
         score++;
+        qusWrite++;
 
     }
-    if (no8.checked) {        qusWrite++;
-
+    if (no8.checked) {
         score++;
+        qusWrite++;
 
     }
-    if (no9.checked) {        qusWrite++;
-
+    if (no9.checked) {
         score++;
+        qusWrite++;
 
     }
     if (no10.checked) {
@@ -170,9 +170,9 @@ function results() {
 
         score++;
     }
-    if (no12.checked) {        qusWrite++;
-
+    if (no12.checked) {
         score++;
+        qusWrite++;
 
     }
     if (no13.checked) {
@@ -195,9 +195,9 @@ function results() {
 
         score++;
     }
-    if (no17.checked) {        qusWrite++;
-
+    if (no17.checked) {
         score++;
+        qusWrite++;
 
     }
     if (no18.checked) {
@@ -207,37 +207,39 @@ function results() {
     }
     if (no19.checked) {
         qusWrite++;
+
         score++;
     }
     if (no20.checked) {
         qusWrite++;
+
         score++;
     }
 
-    totalScore.innerHTML = "Score = " + score + "/20";
-    totalScores.innerHTML = "Score = " + score + "/20";
+    totalScore.innerHTML = "Score = " + score + "/40";
+    totalScores.innerHTML = "Score = " + score + "/40";
     totalQus.innerHTML = "Qus Corrected = " + qusWrite;
 
 
-    if (score == 20) {
+    if (score == 40) {
         com.innerHTML = "Wow! Congrates";
         com.style.color = "black";
         com.style.background = "green";
         com.style.boxShadow = "1px 1px 2px 2px black";
-    } else if (score >= 15) {
+    } else if (score >= 35) {
         com.innerHTML = "Wow! Nice Try Keep It Up Like This";
         com.style.color = "none";
         com.style.background = "rgb(225, 225, 225, 0.9)";
-    } else if (score >= 5 && score < 15) {
+    } else if (score >= 15 && score < 35) {
         com.innerHTML =
             "Good Performance! Try to keep push your self for good marks";
         com.style.color = "none";
         com.style.background = "rgb(225, 225, 225, 0.9)";
-//     } else if (score >= 5 && score < 15) {
-//         com.innerHTML = "Just Pass try to lean something more Good Luck";
-//         com.style.color = "none";
-//         com.style.background = "rgb(225, 225, 225, 0.9)";
-//     } else if (score < 5) {
+    } else if (score >= 5 && score < 15) {
+        com.innerHTML = "Just Pass try to lean something more Good Luck";
+        com.style.color = "none";
+        com.style.background = "rgb(225, 225, 225, 0.9)";
+    } else if (score < 5) {
         com.innerHTML = "Fail! Please concentrate";
         com.style.color = "black";
         com.style.background = "red";
@@ -380,5 +382,5 @@ function closeScore() {
 }
 
 
-// window.onloadstart = results;
-// window.onloadstart = closeScore;
+window.onloadstart = results;
+window.onloadstart = closeScore;
