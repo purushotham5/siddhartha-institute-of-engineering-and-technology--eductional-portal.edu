@@ -216,8 +216,8 @@ function results() {
         score++;
     }
 
-    totalScore.innerHTML = "Score = " + score + "/40";
-    totalScores.innerHTML = "Score = " + score + "/40";
+    totalScore.innerHTML = "Score = " + score + "/20";
+    totalScores.innerHTML = "Score = " + score + "/20";
     totalQus.innerHTML = "Qus Corrected = " + qusWrite;
 
 
