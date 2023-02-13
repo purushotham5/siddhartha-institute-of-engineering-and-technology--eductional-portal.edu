@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+        
+        .container-fluid-5 {
+            min-height: 100vh;
+            min-width: 100%;
+            background-color: rgba(225, 225, 225, .9);
+            display: flex;
+            backface-visibility: hidden;
+            backdrop-filter: blur(10px);
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
+            position: fixed;
+            top: 0px;
+        }
+        
+        .container-5 {
+            min-height: 90vh;
+            min-width: 90%;
+            background: transparent;
+            position: relative;
+            overflow-y: hidden;
+        }
+        
+        .container-5 img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            overflow-y: hidden;
+        }
+        
+        #gone {
+            transition: .5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid-5" id="gone">
+        <div class="container-5">
+            <img src="header-image-clgname.png" onclick="Overley()">
+        </div>
+    </div>
+
+
+    <script>
+        let slow = document.getElementById("gone");
+
+        function Overley() {
+            let a;
+            if (a == true) {
+                slow.style.top = "000px";
+            } else {
+                slow.style.top = "-1000px";
+            }
+        }
+    </script>
+</body>
+
+</html>
