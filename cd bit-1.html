@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD Quiz</title>
+    <link rel="stylesheet" href="bit.css" />
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <!-- this is for the bootstrap links  -->
+</head>
+
+<body>
+    <section id="topp">
+        <div class="show">
+            <div class="result-box">
+                <!-- <button type="button"><i class="fa fa-close"></i></button> -->
+                <img class="marks-logo" src="logo college.png">
+
+                <span1>
+                    <h1 id="num-ans"></h1>
+                </span1>
+                <span2>
+                    <h1 id="marks-results"></h1>
+                </span2>
+                <span3 id="compliments">
+                </span3>
+                <button type="button" onclick="closeScore()" id="close-btn">Close</button>
+            </div>
+        </div>
+    </section>
+    <div class="container" id="boost">
+        <div class="bits">
+            <div class="content">
+                <ul class="options">
+                    <li>
+                        <strong id="qs-1">1. What is a compiler?</strong>
+                        <ul class="sub-options">
+                            <li>
+                                <label class="container-1">a) system program that converts instructions to machine
+                                    language
+                                    <input type="radio" name="q1" id="correct1" required>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">b) system program that converts machine language to
+                                    high-level language
+                                    <input type="radio" name="q1" id="wrong">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">c) system program that writes instructions to perform
+                                    <input type="radio" name="q1" id="wrong">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">d) All of the mentioned
+                                    <input type="radio" name="q1" id="wrong">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-2">2. Which of the following is a stage of compiler design?
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"><input type="radio" name="q2" id="wrong1"> <span
+                                        class="checkmark"></span>
+                                    a) Semantic analysis
+                                </label></li>
+                            <li> <label class="container-1"><input type="radio" name="q2" id="wrong1"> <span
+                                        class="checkmark"></span>
+                                    b) Intermediate code generator
+                                </label></li>
+                            <li> <label class="container-1"><input type="radio" name="q2" id="wrong1"> <span
+                                        class="checkmark"></span>
+                                    c) Code generator
+                                </label></li>
+                            <li> <label class="container-1"><input type="radio" name="q2" id="correct2"> <span
+                                        class="checkmark"></span>
+                                    d) All of the mentioned
+                                </label></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="options">
+                    <li>
+                        <strong id="qs-3">3. What is the use of a symbol table in compiler design?
+                        </strong>
+                        <ul class="sub-options">
+                            <li>
+                                <label class="container-1">a) Finding name’s scope
+                                    <input type="radio" name="q3"id="wrong2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">b) Type checking
+
+
+                                    <input type="radio" name="q3"id="wrong2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">c) Keeping all of the names of all entities in one place
+
+
+                                    <input type="radio" name="q3" id="wrong2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">d) All of the mentioned
+                                    <input type="radio" name="q3" id="correct3">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="options">
+                    <li>
+                        <strong id="qs-4">4. Which of the following error can a compiler check?
+
+                        </strong>
+                        <ul class="sub-options">
+                            <li>
+                                <label class="container-1">a) Syntax Error
+
+                                    <input type="radio" name="q4" id="correct4">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">b) Logical Error
+
+
+
+                                    <input type="radio" name="q4">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">c) Both Logical and Syntax Error
+
+                                    <input type="radio" name="q4">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="container-1">d) Compiler cannot check errors
+
+
+                                    <input type="radio" name="q4">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="options">
+                    <li>
+                        <strong id="qs-5">5. A programmer, writes a program to multiply two numbers instead of dividing
+                            them by mistake, how can this error be detected?
+
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q5"> <span
+                                        class="checkmark"></span>
+                                    a) Compiler or interpreter
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q5"> <span
+                                        class="checkmark"></span>
+                                    b) Compiler only
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q5"> <span
+                                        class="checkmark"></span>
+                                    c) Interpreter only
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q5" id="correct5"> <span
+                                        class="checkmark"></span>
+                                    d) None of the mentioned
+                                </label></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-6">6. Who is responsible for the creation of the symbol table?
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q6"> <span
+                                        class="checkmark"></span>
+                                    a) Assembler
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q6" id="correct6"> <span
+                                        class="checkmark"></span>
+                                    b) Compiler
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q6"> <span
+                                        class="checkmark"></span>
+                                    c) Interpreter
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q6"> <span
+                                        class="checkmark"></span>
+                                    d) All of the mentioned
+                                </label></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-7">7. Which of the following is known as a compiler for a high-level language
+                            that runs on one machine and produces code for a different machine? </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q7" id="correct7"> <span
+                                        class="checkmark"></span>
+                                    a) Cross compiler
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q7"> <span
+                                        class="checkmark"></span>
+                                    b) Multipass compiler
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q7"> <span
+                                        class="checkmark"></span>
+                                    c) Optimizing compiler
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q7"> <span
+                                        class="checkmark"></span>
+                                    d) One pass compiler
+                                </label></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-8">8. Which of the following is a system program that integrates a program’s
+                            individually compiled modules into a form that can be executed?
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q8"> <span
+                                        class="checkmark"></span>
+                                    a) Interpreter
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q8"> <span
+                                        class="checkmark"></span>
+                                    b) Assembler
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q8"> <span
+                                        class="checkmark"></span>
+                                    c) Compiler
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q8" id="correct8"> <span
+                                        class="checkmark"></span>
+                                    d) Linking Loader
+                                </label></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-9">9. Which of the following is a definition of compiler?
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" name="q9" id="correct9"> <span
+                                        class="checkmark"></span>
+                                    a) Acceptance of a program written in a high-level language and produces an object
+                                    program
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q9"> <span
+                                        class="checkmark"></span>
+                                    b) Program is put into memory and executes it
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q9"> <span
+                                        class="checkmark"></span>
+                                    c) Translation of assembly language into machine language
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q9"> <span
+                                        class="checkmark"></span>
+                                    d) None of the mentioned
+                                </label></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <strong id="qs-10">10. Which of the following phase of the compiler is Syntax Analysis?
+                        </strong>
+                        <ul class="sub-options">
+                            <li> <label class="container-1"> <input type="radio" id="correct10" name="q10"> <span
+                                        class="checkmark"></span>
+                                    a) Second
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q10"> <span
+                                        class="checkmark"></span>
+                                    b) Third
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q10"> <span
+                                        class="checkmark"></span>
+                                    c) First
+                                </label></li>
+                            <li> <label class="container-1"> <input type="radio" name="q10"> <span
+                                        class="checkmark"></span>
+                                    d) All of the mentioned
+                                </label></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="btns">
+                <!-- <a role="button" href="cd.html">Back</a> -->
+                <button type="button" onclick="backPage()" id="ViewScore">Back</button>
+                <button type="submit" onclick="results()" value="back" id="back-to"> SubmitQuiz
+                </button>
+                <button type="button" onclick="viewScore()" id="ViewScore">View
+                    Score</button>
+                <button type="button" onclick="nextPage()" id="ViewScore">Next</button>
+
+                <!-- <a href="cd-2.html" role="button">Next</a> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="bit.js"></script>
+</body>
+
+</html>

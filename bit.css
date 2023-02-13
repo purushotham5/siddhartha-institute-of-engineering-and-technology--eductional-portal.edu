@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  overflow-y: scroll;
+}
+.container {
+  min-height: 100vh;
+  max-width: 100%;
+  /* background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4="); */
+
+  /* background-color: white; */
+  background-color: #2196f3;
+  position: relative;
+}
+.bits {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+  /* background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4="); */
+  /* background-color: #fff; */
+  padding-bottom: 4em;
+}
+@media (max-width: 768px) {
+  .bits {
+    padding-bottom: 8em;
+  }
+}
+
+.content {
+  padding: 20px;
+  min-height: 100%;
+  max-width: 100%;
+}
+.options {
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 3px 2px 5px 2px black;
+  padding: 10px;
+  max-width: 100%;
+  min-height: 100%;
+  margin: 10px;
+  font-size: 20px;
+  color: black;
+}
+@media (max-width: 768px) {
+  .options {
+    background-color: white;
+    padding: 10px;
+    max-width: 100%;
+    min-height: 100%;
+    margin-bottom: 10px;
+  }
+}
+.sub-options {
+  margin: 10px;
+  padding: 0px;
+}
+li {
+  margin: 10px;
+  list-style: none;
+}
+
+/*radio----------------------------------------------------------------------*/
+
+/* The container */
+.container-1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container-1:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-1 input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-1 .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.btns {
+  position: fixed;
+  bottom: 0em;
+  min-height: 50px;
+  min-width: 100%;
+  background-color: rgba(225, 225, 225, 0.5);
+  backdrop-filter: blur(10px);
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 2px 2px black;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.btns button {
+  margin: 10px;
+  position: relative;
+  right: 2em;
+  float: right;
+  color: aqua;
+  font-weight: bolder;
+  font-size: 20px;
+  font-variant: small-caps;
+  letter-spacing: 1.5px;
+  padding: 10px 30px;
+  background-color: aqua;
+  color: black;
+  transition: 0.5s ease-in;
+  box-shadow: 1px 1px 2px 2px black;
+  z-index: 990;
+  cursor: pointer;
+}
+.btns button:hover {
+  background-color: black;
+  color: aqua;
+  box-shadow: 1px 1px 2px 3px aqua;
+}
+.btns a {
+  margin: 10px;
+  position: relative;
+  color: aqua;
+  float: right;
+  right: 2em;
+  font-weight: bolder;
+  font-size: 20px;
+  font-variant: small-caps;
+  letter-spacing: 1.5px;
+  padding: 10px 30px;
+  background-color: aqua;
+  color: black;
+  transition: 0.5s ease-in;
+  box-shadow: 1px 1px 2px 2px black;
+  z-index: 990;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btns a:hover {
+  text-decoration: none;
+  background-color: black;
+  color: aqua;
+  box-shadow: 1px 1px 2px 3px aqua;
+}
+@media (max-width: 768px) {
+  .btns button {
+    margin: 10px;
+    position: relative;
+    right: 0em;
+    float: right;
+    padding: 10px 10px;
+  }
+  .btns a {
+    margin: 10px;
+    position: relative;
+    right: 0em;
+    float: right;
+    padding: 10px 10px;
+  }
+}
+#quiz {
+  padding: 10px 34px;
+}
+
+/*---------------------------------------------------------results-----------------------*/
+section {
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: rgb(225, 225, 225, 0.9);
+  position: fixed;
+  z-index: 100;
+  backdrop-filter: blur(100);
+  backface-visibility: none;
+  filter: blur(100);
+  top: -1000px;
+  transition: all linear 0.5s;
+}
+.show {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result-box {
+  min-height: 500px;
+  min-width: 500px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 1px 2px 3px 3px white;
+}
+@media (max-width: 768px) {
+  .result-box {
+    box-shadow: 0px 0px 0px 0px white;
+
+    min-width: 80%;
+  }
+}
+span1 {
+  font-size: 20px;
+  font-weight: 800;
+  font-variant: small-caps;
+  margin: 1em;
+}
+span2 {
+  /* border: 2px solid black; */
+  max-width: 300px;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 1000;
+  font-variant: small-caps;
+  font-size: 30px;
+  margin-top: 1em;
+}
+@media (max-width: 768px) {
+  span2 {
+    max-width: 300px;
+  }
+}
+#close-btn {
+  margin-top: 2em;
+  margin-bottom: 10px;
+  padding: 10px 40px;
+  background: black;
+  color: aqua;
+  font-size: 18px;
+  font-variant: small-caps;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 2px black;
+  transition: 0.5s ease-in;
+}
+#close-btn:hover {
+  box-shadow: 1px 1px 2px 2px black;
+  background: aqua;
+  color: black;
+}
+/*---------------------------------------compliments-------------------*/
+
+#compliments {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  font-variant: small-caps;
+  margin-top: 2em;
+  background-color: rgb(225, 225, 225, 0.9);
+  padding: 10px;
+  animation: indicate 0.5s infinite;
+  border-radius: 20px;
+}
+@keyframes indicate {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+#over1,
+#over2,
+#over3,
+#over4,
+#over5,
+#over6,
+#over7,
+#over8,
+#over9,
+#over10,
+#over11,
+#over12,
+#over13,
+#over14,
+#over15,
+#over16,
+#over17,
+#over18,
+#over19,
+#over20 {
+  margin-left: 2em;
+  margin-top: 2em;
+  text-transform: capitalize;
+  font-weight: 1000;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  animation: pop 0.5s infinite;
+  padding: 10px 20px;
+  background-color: green;border-radius: 20px;
+  width: fit-content;
+  display: none;
+}
+#overr1,
+#overr2,
+#overr3,
+#overr4,
+#overr5,
+#overr6,
+#overr7,
+#overr8,
+#overr9,
+#overr10,
+#overr11,
+#overr12,
+#overr13,
+#overr14,
+#overr15,
+#overr16,
+#overr17,
+#overr18,
+#overr19,
+#overr20 {
+  margin-left: 2em;
+  margin-top: 2em;
+  text-transform: capitalize;
+  font-weight: 1000;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  animation: pop 0.5s infinite;
+  padding: 10px 20px;border-radius: 20px;
+  background-color: red;
+  width: fit-content;
+  display: none;
+}
+#overrr1,
+#overrr2,
+#overrr3,
+#overrr4,
+#overrr5,
+#overrr6,
+#overrr7,
+#overrr8,
+#overrr9,
+#overrr10,
+#overrr11,
+#overrr12,
+#overrr13,
+#overrr14,
+#overrr15,
+#overrr16,
+#overrr17,
+#overrr18,
+#overrr19,
+#overrr20 {
+  margin-left: 2em;
+  margin-top: 2em;
+  text-transform: capitalize;
+  font-weight: 1000;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  animation: pop 0.5s infinite;
+  padding: 10px 20px;
+  background-color: pink;
+  width: fit-content;
+  display: none;
+}
+
+/* -----------------------------------------------congrates------------------------------- */
+article {
+  min-height: 100vh;
+  max-width: 100%;
+  background: linear-gradient(90deg, #189086, #2f8198);
+  background-image: linear-gradient(to bottom right, #02b3e4, #02ccba);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 0pc;
+}
+
+.contain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #189086, #2f8198);
+  background-image: linear-gradient(to bottom right, #02b3e4, #02ccba);
+  z-index: 1000;
+}
+
+.done {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: -20px;
+  margin: auto;
+}
+.contain h1 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.4em;
+  color: #02b3e4;
+  margin-top: 2em;
+}
+@media (max-width: 768px) {
+  .contain h1 {
+    margin-top: 1em;  font-size: 35px;
+
+  }
+}
+#marks-results{
+  position: relative;top: 1em;
+}
+.congrats {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  max-width: 800px;
+  transform: translate(-50%, -50%);
+  min-height: 600px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.3);
+  background-image: linear-gradient(to bottom right, #02b3e4, #02ccba);
+  background-image: linear-gradient(
+      rgba(225, 225, 225, 0.1),
+      rgba(225, 225, 225, 0.1)
+    ),
+    url("https://cdn.dribbble.com/users/39201/screenshots/3694057/nutmeg.gif");
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+  background-repeat: repeat-x;
+  font-size: 2em;
+  color: #189086;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  position: relative;
+  top: 6em;
+}
+@media (max-width: 768px) {
+  .congrats {
+    max-width: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;  justify-content: space-between;
+
+  }.text {
+    position: relative;
+    top: 2em;
+  }
+}
+.btn-group {
+  min-width: 100%;
+  min-height: 50px;
+  background-color: #02ccba;
+  padding: 10px 0px;
+  overflow: hidden;
+}
+.btn-group button {
+  padding: 10px 50px;
+  background-color: black;
+  color: white;
+  margin: 1px;
+  font-weight: 800;
+  font-variant: small-caps;
+  font-style: oblique;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;border-radius: 20px;
+}
