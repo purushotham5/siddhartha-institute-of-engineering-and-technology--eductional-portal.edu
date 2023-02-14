@@ -184,7 +184,7 @@ header {
   }
 }
 #come{
-  display: flex;align-items: center;justify-content: space-around;max-width: 100%;min-height: 100%;background-color: blue;
+  display: flex;align-items: center;justify-content: space-evenly;max-width: 100%;min-height: 100%;background-color: white;
 }
 .navbar {
   /* background: #2e1f62; */
@@ -1469,7 +1469,7 @@ bottom: 0;
 }
 
 #nost{
-  padding:20px;width: 100%;min-height: 100%;background-color: #4158d0;box-shadow: none;display: flex;align-items: flex-start;justify-content: flex-start;margin-top: 10px;
+  padding:20px;width: 100%;min-height: 100%;background-color: #4158d0;box-shadow: none;display: flex;align-items: flex-start;justify-content: flex-start;margin-top: 0px;
 }#nost-2{
-padding:0px;width: 100%;min-height: 100%;background-color: #fff;box-shadow: none;display: flex;align-items: flex-start;justify-content: flex-start;left: 0px;
+padding:10px;width: 100%;min-height: 100%;background-color: #fff;box-shadow: none;display: flex;align-items: center;justify-content: center;left: 0px;
 }
