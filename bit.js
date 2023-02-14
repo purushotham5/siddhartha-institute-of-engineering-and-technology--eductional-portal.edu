@@ -221,21 +221,21 @@ function results() {
     totalQus.innerHTML = "Qus Corrected = " + qusWrite;
 
 
-    if (score == 40) {
+    if (score == 20) {
         com.innerHTML = "Wow! Congrates";
         com.style.color = "black";
         com.style.background = "green";
         com.style.boxShadow = "1px 1px 2px 2px black";
-    } else if (score >= 35) {
+    } else if (score >= 15) {
         com.innerHTML = "Wow! Nice Try Keep It Up Like This";
         com.style.color = "none";
         com.style.background = "rgb(225, 225, 225, 0.9)";
-    } else if (score >= 15 && score < 35) {
+    } else if (score >= 10 && score < 15) {
         com.innerHTML =
             "Good Performance! Try to keep push your self for good marks";
         com.style.color = "none";
         com.style.background = "rgb(225, 225, 225, 0.9)";
-    } else if (score >= 5 && score < 15) {
+    } else if (score >= 5 && score < 10) {
         com.innerHTML = "Just Pass try to lean something more Good Luck";
         com.style.color = "none";
         com.style.background = "rgb(225, 225, 225, 0.9)";
